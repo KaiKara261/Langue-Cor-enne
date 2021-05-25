@@ -1,0 +1,401 @@
+body{
+	font-family: Verdana, Calibri, sans-serif;
+	margin: 0px
+	padding: 0px;
+	height: 100vh;
+}
+
+nav{
+	width:100%;
+	background-color: #424558;
+}
+
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > ul::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.submenu{
+	display: none;
+}
+
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+nav label{
+	display: none;
+}
+
+nav a{
+	display:inline-block;
+	text-decoration: none;
+
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC; 
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px ;
+}
+
+.menu-hangeul:hover{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-grammaire:hover{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-conjugaison:hover{
+	border-top: 5px solid#f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-contact:hover{
+	border-top: 5px solid#BBB;
+	background-color: rgba(220, 220, 220, 0.15 );
+}
+
+.menu-hangeul .submenu{
+	background-color: rgb(230, 100, 40);
+}
+
+.menu-grammaire .submenu{
+    background-color: rgb(000, 160, 240);
+}
+
+.menu-conjugaison .submenu{
+	background-color: rgb(250, 215, 100);
+}
+
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+.menu-hangeul .submenu li:hover{
+	background-color: rgb(210, 77, 60);
+}
+
+.menu-grammaire .submenu li:hover{
+	background-color: rgb(000, 115, 200);
+}
+
+.menu-conjugaison .submenu li:hover{
+	background-color: rgb(000, 115, 200);
+}
+
+#titresejong{
+	color: purple;
+	font-size: 20px;
+}
+
+
+#slider{
+	overflow: hidden;
+}
+
+#slider figure img{
+	width: 16%;
+	float: left;
+	height: 350px;
+}
+
+#slider figure {
+	position: relative;
+	width: 400%;
+	margin: 0;
+	margin-bottom: 2
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slider infinite;
+
+}
+
+
+
+@keyframes slider {
+
+0%{
+	left: 0; ease-in; /*1er*/
+}
+
+20%{
+	left: 0; ease-in;
+}
+
+25%{
+	left: -100%; /*2eme*/
+}
+
+45%{
+	left: -100%; 
+}
+
+50%{
+	left: 0%; /*3eme*/
+}
+
+95%{
+	left: 0%; ease-out; /*5eme*/
+}
+
+100%{
+	left: 0%; ease-out; /*1er*/
+}
+
+}
+
+
+#slider {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 0px
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+	margin-bottom: 50px;
+
+}
+
+
+
+#slider figure {
+	position: relative;
+	width: 200%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 14s slider infinite;
+	animation-delay: 4s;
+	animation-fill-mode: none;
+}
+
+#slider figure img: hover {
+	animation-play-state: paused;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+#titresejong{
+	font-size: 40px;
+	font-family: Times New Roman;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+
+
+.p1{
+	float: left;
+}
+
+p{
+	margin: left;
+	line-height: 20px;
+	text-align: justify;
+}
+
+
+
+/*footer*/
+
+
+.contenu {
+	flex: 1 0 auto;
+}
+
+footer{
+	flex-shrink: 0;
+	border-top: 50px;
+	background: #424558;
+	color: #303030;
+	margin: none;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+
+
+.contenu-footer{
+	width: 1200px;
+	margin: 0 0 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 20px;
+	padding: 50px 0 10px;
+	color: white;
+	font-size: 12px;
+}
+
+
+.bloc{
+	width: 25%;
+	margin: 0 60px;
+}
+
+
+/*contact */ 
+
+.footer-contact h3,
+.footer-services h3,
+.footer-horaires h3,
+.footer-médias h3{
+	font-size: 15px;
+ 	padding-bottom: 20px;
+ 	color: white;
+ 	text-decoration:underline;
+
+
+}
+
+.footer-contact p{
+	padding: 5px 0;
+}
+
+/* Services */
+
+.liste-services,
+.liste-horaires,
+.liste-media{
+	list-style-type: none;
+
+}
+ 	
+.liste-services li {
+	padding: 2px 0;
+}
+
+.liste-services a {
+	text-decoration: none;
+	color: white;
+}
+
+.liste-services a:hover {
+	color: rgb(3,3,3);
+}
+
+/*medias*/
+
+
+.liste-media a ul{
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	color: white;
+
+}
+
+.liste-media li{
+	margin: 5px 80px 0 0;
+	color: white;
+	list-style-type: none;
+
+
+}
+
+.liste-media li a{
+	color: white;
+	line-height: 10px;
+	margin: 3px;
+	font-size: 14px;
+	
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.liste-media a:hover {
+	color: rgb(3,3,3);
+}
+
+
+#copy{
+	color: white;
+	margin: left;
+	font-style: italic;
+}
+
+/*BODY*/
+
+
+
+.para{
+	display: inline-flex;
+	text-align: left;
+	margin: 10px;
+}
+
+.fb{
+	border: 2px solid black;
+	width: 125%;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	height:  450px;
+	background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-north-korea-travel-poster-background-image_195081.jpg");
+}
+
+.imgsejong{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
